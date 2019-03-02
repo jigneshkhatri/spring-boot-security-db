@@ -49,3 +49,9 @@ To run the project, open the command-line at the project's root directory, and r
 * _http://localhost:8080/spring-security-demo/api/s/usr/test_
   * All the APIs which start from **/s/usr/*** will be only accessible to authenticated users with **USER** role. So this is test endpoint for NORMAL but authenticated user.
   * Method: **GET**
+  
+### References:
+Mixture of below tutorials :)
+* http://websystique.com/spring-security/secure-spring-rest-api-using-oauth2/
+* https://www.javaguides.net/2018/09/spring-boot-spring-mvc-role-based-spring-security-jpa-thymeleaf-mysql-tutorial.html
+* https://www.baeldung.com/spring-security-oauth-dynamic-client-registration
