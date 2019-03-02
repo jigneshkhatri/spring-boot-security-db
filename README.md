@@ -35,11 +35,11 @@ To run the project, open the command-line at the project's root directory, and r
   * Method: **POST**
   * Content-Type: **application/x-www-form-urlencoded**
   * Body: 
-    * username: admin@test.com
-    * password: 123456
-    * grant_type: password
-    * client_id: clientId
-    * client_secret: clientSecret
+    * username: **admin@test.com**
+    * password: **123456**
+    * grant_type: **password**
+    * client_id: **clientId**
+    * client_secret: **clientSecret**
 * _http://localhost:8080/spring-security-demo/api/test_
   * This is open route, accessible to all users without authentication.
   * Method: **GET**
@@ -48,3 +48,4 @@ To run the project, open the command-line at the project's root directory, and r
   * Method: **GET**
 * _http://localhost:8080/spring-security-demo/api/s/usr/test_
   * All the APIs which start from **/s/usr/*** will be only accessible to authenticated users with **USER** role. So this is test endpoint for NORMAL but authenticated user.
+  * Method: **GET**
