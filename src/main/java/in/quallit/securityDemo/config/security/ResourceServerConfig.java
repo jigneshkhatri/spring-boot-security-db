@@ -30,13 +30,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .anonymous().disable()
                 .requestMatchers().antMatchers("/**")
                 .and().authorizeRequests()
-                .antMatchers("/s/adm/**").hasAuthority(RoleEnum.ADMIN.name())
-                .antMatchers("/s/usr/**").hasAuthority(RoleEnum.USER.name())
+                .antMatchers("/**/s/adm/**").hasAuthority(RoleEnum.ADMIN.name())
+                .antMatchers("/**/s/usr/**").hasAuthority(RoleEnum.USER.name())
                 .and().exceptionHandling().accessDeniedHandler(new OAuth2AccessDeniedHandler());
-//        http.authorizeRequests()
-//                .antMatchers("*/api/s/**")
-//                .permitAll()
-//                .and()
-//                .exceptionHandling().accessDeniedHandler(new OAuth2AccessDeniedHandler());
     }
 }
